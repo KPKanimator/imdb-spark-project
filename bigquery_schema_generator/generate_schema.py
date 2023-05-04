@@ -364,7 +364,6 @@ class SchemaGenerator:
                     'NULLABLE RECORD into REPEATED RECORD'
                 )
             elif old_mode == 'REPEATED' and new_mode == 'NULLABLE':
-                # TODO: Maybe remove this warning output. It was helpful during
                 # development, but maybe it's just natural.
                 self.log_error(
                     f'Leaving schema for "{full_old_name}" as REPEATED RECORD'
