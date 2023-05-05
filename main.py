@@ -33,6 +33,13 @@ if __name__ == "__main__":
     # print(tech_rdd.collect())
     task1(spark)
 
-    print(task1(spark).show())
+    # https://stackoverflow.com/questions/40163996/how-to-save-a-dataframe-as-compressed-gzipped-csv
+    # print(task1(spark).show())
+    task1(spark)\
+        .write\
+        .mode('overwrite')\
+        .format("com.databricks.spark.csv")\
+        .option("codec", "org.apache.hadoop.io.compress.GzipCodec")\
+        .save("./output/titleAkasPath_ua.csv")
 
     print("Application Completed.")
