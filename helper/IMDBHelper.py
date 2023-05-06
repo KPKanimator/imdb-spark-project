@@ -11,7 +11,8 @@ import json
 class IMDBHelper(object):
     @staticmethod
     def read_tsv_file_load_as_df(spark, data_file_path, schema):
-        data_frame = spark.read.csv(data_file_path, sep=r'\t', header=True, schema=schema)
+        # dateFormat= 'MM/dd/yyyy'
+        data_frame = spark.read.csv(data_file_path, sep=r'\t', header=True, nullValue='null', schema=schema)
         return data_frame
 
     @staticmethod

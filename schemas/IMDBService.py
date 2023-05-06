@@ -64,7 +64,7 @@ class IMDBService(object):
     ])
 
     title_ratings_schema = StructType([
-        StructField('tconst', StringType(), True),
+        StructField('tconst', StringType(), False),
         StructField('averageRating', FloatType(), True),
         StructField('numVotes', IntegerType(), True),
     ])

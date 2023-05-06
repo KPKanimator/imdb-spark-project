@@ -287,4 +287,8 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm
+# Loading Stage
+# 1. Load all results of transformations to .csv files. Pay attention: you have to
+# get ONE .csv file per ONE transformation (8 files overall). Do not push
+# them into the repository (add your data folder to .gitignore).
 /output/
