@@ -1,0 +1,9 @@
+{
+  "titleRatingsPath": "d://Datasets//final_project//title.ratings.tsv.gz",
+  "titlePrincipalsPath": "d://Datasets//final_project//title.principals.tsv.gz",
+  "titleEpisodePath": "d://Datasets//final_project//title.episode.tsv.gz",
+  "titleCrewPath": "d://Datasets//final_project//title.crew.tsv.gz",
+  "titleBasicsPath": "d://Datasets//final_project//title.basics.tsv.gz",
+  "titleAkasPath": "d://Datasets//final_project//title.akas.tsv.gz",
+  "nameBasicsPath": "d://Datasets//final_project//name.basics.tsv.gz"
+}
